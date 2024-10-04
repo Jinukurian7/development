@@ -97,29 +97,46 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .banner-container {
+    min-height: 285px;
+  }
+}
+.banner-container .banner-content h1 {
+  margin-bottom: 0;
+  font-size: 36px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .banner-container .banner-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner-container .banner-content h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .banner-container .banner-content h1 {
+    font-size: 55px;
+  }
+}
+.banner-container .banner-content p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+.banner-container .banner-content .button-wrapper {
+  margin-top: 30px;
+}
 @media screen and (min-width: 1200px) {
   .banner-container.home-banner {
     min-height: 800px;
   }
 }
-
-.banner-content h1 {
-  margin-bottom: 30px;
-  font-size: 55px;
-  text-align: center;
-}
-.banner-content.home-banner {
-  max-width: 600px;
-}
-.banner-content.home-banner h1 {
+.banner-container.home-banner .banner-content h1 {
   text-align: left;
-}
-.banner-content p {
-  font-size: 20px;
-  line-height: 1.7;
-}
-.banner-content .button-wrapper {
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -474,6 +491,10 @@ img {
   border-bottom: 1px solid #cecece;
   margin-bottom: 28px;
 }
+.contact-block input:focus,
+.contact-block textarea:focus {
+  outline: 0;
+}
 .contact-block input.btn,
 .contact-block textarea.btn {
   width: auto;
@@ -720,7 +741,7 @@ footer .copyright {
   margin-bottom: 30px;
 }
 .section p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.625;
   color: #828282;
 }
@@ -822,4 +843,74 @@ footer .copyright {
   line-height: 27px;
   text-transform: capitalize;
   color: #04004c;
+}
+
+.contact-main {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 1024px) {
+  .contact-main {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+.contact-main .contact-block span.wpcf7-form-control-wrap {
+  padding-top: 30px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-info {
+  text-align: left;
+}
+.contact-info .title {
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.contact-info .description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #666666;
+  margin-bottom: 0;
+  max-width: 350px;
+}
+.contact-info ul.links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+  max-width: 350px;
+}
+.contact-info ul.links li {
+  margin-bottom: 15px;
+  display: flex;
+}
+.contact-info ul.links i {
+  color: #00a900;
+  display: inline-block;
+  margin-right: 16px;
+  min-width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+.contact-info ul.links a,
+.contact-info ul.links address {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: lowercase;
+  color: #6f6e85;
 }
