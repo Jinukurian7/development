@@ -129,6 +129,9 @@ img {
 .banner-container .banner-content .button-wrapper {
   margin-top: 30px;
 }
+.banner-container .banner-content .btn i {
+  font-size: 18px;
+}
 @media screen and (min-width: 1200px) {
   .banner-container.home-banner {
     min-height: 800px;
@@ -392,19 +395,44 @@ img {
 }
 @media screen and (min-width: 540px) {
   .service-item {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .service-item {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
 .service-item-link {
+  display: block;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.service-item-link figcaption {
+  position: absolute;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  bottom: 0;
+  padding: 50px 20px 20px;
+  width: 100%;
+  z-index: 1;
+}
+.service-item-link figcaption:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: white;
+  background: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0.5) 75%, transparent 100%);
 }
 .service-item-link img {
   max-width: 100%;
